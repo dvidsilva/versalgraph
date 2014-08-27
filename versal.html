@@ -11,9 +11,8 @@
 
 <body>
 
-  <h1 class="title">Diagram</h1>
+  <h1 class="title diagramName" contenteditable>Diagram</h1>
   <div>
-    <input type="text" class='diagramName'>
   </div>
 
   <div class="shape-buttons">
@@ -21,7 +20,8 @@
     <button onclick="addCircle()"><div class='add-circle'></div></button>
     <button onclick="addTriangle()"><div class='add-triangle'></div></button>
     <button onclick="addLine()"><div class='add-line'></div></button>
-    <input type="text" class="text" placeholder='Add text'><button onclick="addText()">Add Text</button>
+    <input type="text" class="text" placeholder='Add text'><button onclick="addText()" class='add-text'>+</button>
+
   </div>
 
   <div class="edit-buttons">
@@ -35,6 +35,7 @@
 
   <div class='nothing'>
   </div>
+  <br>
   <br>
   <canvas id="c"></canvas>
 

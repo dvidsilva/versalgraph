@@ -38,6 +38,29 @@ canvas {
   margin-top: -45.3px;
 }
 
+.add-text{
+  color: black;
+  font-size: 1em;
+  margin-left:-10px;
+  top: -10px;
+  position: relative
+}
+
+input {
+    background-color: transparent;
+    border: 0px solid;
+    height: 40px;
+    width: 160px;
+    color: black;
+    width: 100px;
+    top: -10px;
+    position: relative
+}
+
+*:focus {
+    outline: 0;
+}
+
 
 .shape-buttons{
   left: 0px;
