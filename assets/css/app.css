@@ -60,7 +60,6 @@ input {
     outline: 0;
 }
 
-
 .shape-buttons{
   left: 0px;
   top: 25px;
@@ -77,8 +76,6 @@ input {
    width: 25px;
    margin-left: -10px;
 }
-
-
 
 button{
   background: rgba(255, 255, 255, 0);

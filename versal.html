@@ -3,10 +3,15 @@
 
 <head>
   <title>Empty gadget</title>
+
   <script src="bower_components/versal-component-runtime/dist/runtime.min.js"></script>
   <script src="assets/js/fabric.min.js"></script>
   <link rel="import" href="bower_components/versal-gadget-api/versal-gadget-api.html">
   <link rel="stylesheet" href="assets/css/app.css">
+  <link type="text/css" rel="stylesheet" href="assets/css/jquery.miniColors.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/jquery.simplecolorpicker.css" />
+
+
 </head>
 
 <body>
@@ -25,6 +30,8 @@
   </div>
 
   <div class="edit-buttons">
+    <a class="btn" href="#" rel="tooltip" data-placement="top" data-original-title="Font Color"><input type="hidden" id="text-fontcolor" class="color-picker" size="7" value="#000000" style='line-height: 20px'></a>
+		<a class="btn" href="#" rel="tooltip" data-placement="top" data-original-title="Font Border Color"><input type="hidden" id="text-strokecolor" class="color-picker" size="7" value="#000000"></a>
     <button class="btn" id="bring-to-front" title="Bring to Front"><img src='assets/img/bring-to-front.svg' class='bring-to-front-icon'/></button>
     <button class="btn" id="send-to-back" title="Send to Back"><img src='assets/img/send-to-back.svg' class='send-to-back-icon'/></button>
     <button id="remove-selected" class="btn" title="Delete selected item"><img src='assets/img/delete.svg' class='delete-icon'/></button>
@@ -41,6 +48,8 @@
 
 </body>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.miniColors.min.js"></script>
 <script src='assets/js/app.js'></script>
 <script src='assets/js/moreapp.js'></script>
 

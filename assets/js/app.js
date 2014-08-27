@@ -171,5 +171,38 @@
 
     });
     canvas.add(line);
-
   }
+
+
+  $('#text-fontcolor').miniColors({
+			change: function(hex, rgb) {
+			  var activeObject = canvas.getActiveObject();
+		      if (activeObject) {
+		    	  activeObject.fill = this.value;
+		    	  canvas.renderAll();
+		      }
+			},
+			open: function(hex, rgb) {
+				//
+			},
+			close: function(hex, rgb) {
+				//
+			}
+		});
+
+
+		$('#text-strokecolor').miniColors({
+			change: function(hex, rgb) {
+			  var activeObject = canvas.getActiveObject();
+		      if (activeObject) {
+		    	  activeObject.stroke = this.value;
+		    	  canvas.renderAll();
+		      }
+			},
+			open: function(hex, rgb) {
+				//
+			},
+			close: function(hex, rgb) {
+				//
+			}
+		});
