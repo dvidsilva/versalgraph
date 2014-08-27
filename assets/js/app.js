@@ -16,18 +16,17 @@
 
 
   // save a textarea
-  var textarea = document.querySelector('input.diagramName');
+  var textarea = document.querySelector('h1.title');
   textarea.addEventListener('blur', function () {
     player.setAttributes({
-      diagramName: textarea.value
+      diagramName: textarea.innerHTML
     });
   });
 
 
   player.on('attributesChanged', function (attrs) {
     if (attrs && attrs.diagramName) {
-      textarea.value = attrs.diagramName;
-      document.querySelector('.title').innerHTML = attrs.diagramName;
+      document.querySelector('h1.title').innerHTML = attrs.diagramName;
     }
   });
 
