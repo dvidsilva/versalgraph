@@ -25,7 +25,7 @@
 
 
   player.on('attributesChanged', function (attrs) {
-    if (attrs && attrs.textareaValue) {
+    if (attrs && attrs.diagramName) {
       textarea.value = attrs.diagramName;
       document.querySelector('.title').innerHTML = attrs.diagramName;
     }
