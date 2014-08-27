@@ -36,7 +36,23 @@ canvas {
   -webkit-transform:   translateY(-20px) translateX(5px) rotate(27deg);
   position: absolute;
   margin-top: -45.3px;
+}
 
+
+.shape-buttons{
+  left: 0px;
+  top: 25px;
+  position: relative;
+}
+
+.edit-buttons{
+  right: 0px;
+  top: 125px;
+  position: absolute;
+}
+
+.btn img{
+   width: 40px;
 }
 
 
