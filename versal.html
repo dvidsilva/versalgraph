@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Empty gadget</title>
-<script src="bower_components/versal-component-runtime/dist/runtime.min.js"></script>
-<script src="assets/js/fabric.min.js"></script>
-<link rel="import" href="bower_components/versal-gadget-api/versal-gadget-api.html">
-<link rel="stylesheet" href="assets/css/app.css">
+  <title>Empty gadget</title>
+  <script src="bower_components/versal-component-runtime/dist/runtime.min.js"></script>
+  <script src="assets/js/fabric.min.js"></script>
+  <link rel="import" href="bower_components/versal-gadget-api/versal-gadget-api.html">
+  <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
 <body>
@@ -16,9 +17,19 @@
   </div>
   <div class="buttons">
     <button onclick="addRect()">Add Rect</button>
+    <button onclick="addCircle()">Add Circle</button>
+    <button onclick="addTriangle()">Add Triangle</button>
+    <button onclick="addDiamond()">Add Diamond</button>
+<!--    <button onclick="addLine()">Add Line</button>-->
+    <br>
+    <input type="text" class="text">
+    <button onclick="addText()">Add Text</button>
+  </div>
+
+  <div class='nothing'>
   </div>
   <canvas id="c"></canvas>
-  
+
   <p class="role"></p>
 
 </body>
