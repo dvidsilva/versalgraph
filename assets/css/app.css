@@ -7,3 +7,40 @@ canvas {
   height: 400px;
   border: 1px solid black;
 }
+
+.add-rect{
+  height: 40px;
+  width: 40px;
+  background: black;
+}
+
+.add-circle{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: black;
+}
+
+.add-triangle{
+  width: 0;
+	height: 0;
+  border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 40px solid black;
+}
+
+.add-line{
+  width: 45px;
+  height: 45px;
+  border-bottom: 4px solid black;
+  -webkit-transform:   translateY(-20px) translateX(5px) rotate(27deg);
+  position: absolute;
+  margin-top: -45.3px;
+
+}
+
+
+
+button{
+  background: rgba(255, 255, 255, 0);
+}
