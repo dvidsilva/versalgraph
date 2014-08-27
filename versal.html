@@ -15,15 +15,21 @@
   <div>
     <input type="text" class='diagramName'>
   </div>
-  <div class="buttons">
+
+  <div class="shape-buttons">
     <button onclick="addRect()">Add Rect</button>
     <button onclick="addCircle()">Add Circle</button>
     <button onclick="addTriangle()">Add Triangle</button>
-    <button onclick="addDiamond()">Add Diamond</button>
-<!--    <button onclick="addLine()">Add Line</button>-->
+    <button onclick="addLine()">Add Line</button>
     <br>
     <input type="text" class="text">
     <button onclick="addText()">Add Text</button>
+  </div>
+
+  <div class="edit-buttons">
+    <button class="btn" id="bring-to-front" title="Bring to Front"><i class="icon-fast-backward rotate" style="height:19px;">bring-to-front</button>
+    <button class="btn" id="send-to-back" title="Send to Back"><i class="icon-fast-forward rotate" style="height:19px;">send-to-back</button>
+    <button id="remove-selected" class="btn" title="Delete selected item"><i class="icon-trash" style="height:19px;">delete</button>
   </div>
 
   <div class='nothing'>
