@@ -40,9 +40,9 @@ canvas {
 
 .add-text{
   color: black;
-  font-size: 1em;
-  margin-left:-10px;
-  top: -10px;
+  font-size: 2em;
+  margin-left:-55px;
+  top: -7px;
   position: relative
 }
 
@@ -50,9 +50,8 @@ input {
     background-color: transparent;
     border: 0px solid;
     height: 40px;
-    width: 160px;
     color: black;
-    width: 100px;
+    width: 140px;
     top: -10px;
     position: relative
 }
