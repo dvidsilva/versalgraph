@@ -15,15 +15,6 @@
   player.watchBodyHeight();
 
 
-  player.on('editableChanged', function (editableObj) {
-    if (editableObj.editable) {
-      document.querySelector('p.role').innerHTML = 'author';
-    } else {
-      document.querySelector('p.role').innerHTML = 'learner';
-    }
-  });
-
-
   // save a textarea
   var textarea = document.querySelector('input.diagramName');
   textarea.addEventListener('blur', function () {
