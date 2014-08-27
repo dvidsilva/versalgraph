@@ -140,22 +140,24 @@
       addText();
     }
   });
+function addLine(x1, y1, x2, y2) {
+  x1 = x1 || 50;
+  x2 = x2 || 100;
+  y1 = y1 || 200;
+  y2 = y2 || 210;
+  console.log('<3');
+  var line = new fabric.Line([x1, y1, x2, y2], {
+    fill: 'red',
+    stroke: 'red',
+    strokeWidth: 5,
+    selectable: false,
+    originX: 'center',
+    originY: 'center'
 
+  });
+  canvas.add(line);
 
-function addLine() {
-    var line = new fabric.Line({
-      fill: 'red',
-      stroke: 'red',
-      strokeWidth: 5,
-      selectable: false,
-      left: 50,
-      top: 50
-
-    });
-    canvas.add(line);
-
-  }
-
+}
   $('#text-fontcolor').miniColors({
 			change: function(hex, rgb) {
 			  var activeObject = canvas.getActiveObject();
