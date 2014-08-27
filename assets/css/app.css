@@ -34,9 +34,48 @@ canvas {
   height: 45px;
   border-bottom: 4px solid black;
   -webkit-transform:   translateY(-20px) translateX(5px) rotate(27deg);
-  position: absolute;
+  /*position: absolute;*/
   margin-top: -45.3px;
+}
 
+.add-text{
+  color: black;
+  font-size: 2em;
+  margin-left:-55px;
+  top: -7px;
+  position: relative
+}
+
+input {
+    background-color: transparent;
+    border: 0px solid;
+    height: 40px;
+    color: black;
+    width: 140px;
+    top: -10px;
+    position: relative
+}
+
+*:focus {
+    outline: 0;
+}
+
+
+.shape-buttons{
+  left: 0px;
+  top: 25px;
+  position: relative;
+}
+
+.edit-buttons{
+  right: 0px;
+  top: 125px;
+  position: absolute;
+}
+
+.btn img{
+   width: 25px;
+   margin-left: -10px;
 }
 
 
