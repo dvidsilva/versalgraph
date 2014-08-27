@@ -140,6 +140,9 @@
       addText();
     }
   });
+
+
+
 function addLine(x1, y1, x2, y2) {
   x1 = x1 || 50;
   x2 = x2 || 100;
@@ -148,7 +151,7 @@ function addLine(x1, y1, x2, y2) {
   console.log('<3');
   var line = new fabric.Line([x1, y1, x2, y2], {
     fill: 'red',
-    stroke: 'red',
+    stroke: borderColor,
     strokeWidth: 5,
     selectable: false,
     originX: 'center',
@@ -156,10 +159,13 @@ function addLine(x1, y1, x2, y2) {
 
   });
   canvas.add(line);
-
 }
+
+  var fillColor = 'blue', borderColor = 'black';
   $('#text-fontcolor').miniColors({
 			change: function(hex, rgb) {
+              fillColor = this.value;
+
 			  var activeObject = canvas.getActiveObject();
 		      if (activeObject) {
 		    	  activeObject.fill = this.value;
@@ -177,6 +183,7 @@ function addLine(x1, y1, x2, y2) {
 
 		$('#text-strokecolor').miniColors({
 			change: function(hex, rgb) {
+              borderColor = this.value;
 			  var activeObject = canvas.getActiveObject();
 		      if (activeObject) {
 		    	  activeObject.stroke = this.value;
