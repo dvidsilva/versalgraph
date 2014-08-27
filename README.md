@@ -1,10 +1,17 @@
-# Versal example gadget
+# Versal Graph Maker
 
-This is a sample gadget, that utilizes versal-gadget-api to ask learner a question.
+This is a versal gadget that allows the teacher to create graphs, infographies and diagrams
+to better exlain concepts to students
 
-As an author, you can edit question prompt. As a learner, you can answer the question.
 
 ## Installation and running
 
-Run `bower install` to install dependencies.
 Run `versal preview` to preview gadget in Versal player.
+
+## Credits
+
+It was created by [STE](https://github.com/stecd) and [dvidsilva](https://github.com/dvidsilva).
+
+## Contributing
+
+Run the code, do changes and submit PR to [our repo](https://github.com/dvidsilva/versalgraph).
