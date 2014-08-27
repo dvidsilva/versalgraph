@@ -142,15 +142,18 @@
   });
 
 
-  function addLine() {
-    var line = new fabric.Line([50, 100, 200, 200], {
-      stroke: 'blue',
+function addLine() {
+    var line = new fabric.Line({
+      fill: 'red',
+      stroke: 'red',
       strokeWidth: 5,
+      selectable: false,
       left: 50,
       top: 50
 
     });
     canvas.add(line);
+
   }
 
   $('#text-fontcolor').miniColors({
@@ -189,5 +192,41 @@
   function clearAll() {
     canvas.clear().renderAll();
   }
-
   document.getElementById('clear-all').onclick = clearAll;
+
+
+
+  // FREE DRAW LINE
+  var linepos = {}, freedrawline = true;
+  function toggleFreeDrawLine (nv){
+    freedrawline = !freedrawline;
+    document.querySelector('.add-line').style.borderColor = 'lightgray';
+    if(freedrawline){
+      document.querySelector('.add-line').style.borderColor = 'black';
+    }
+  }
+  toggleFreeDrawLine();
+  function resetLinePos(){
+    linepos = { start: {}, end: {}};
+  }
+
+  canvas.on('mouse:down', function (options) {
+    linepos.start = {
+      x: options.e.clientX - canvas._offset.left ,
+      y: options.e.clientY - canvas._offset.top
+    };
+  });
+  canvas.on('mouse:up', function (options) {
+    // draw the line;
+    linepos.end = {
+      x: options.e.clientX - canvas._offset.left ,
+      y: options.e.clientY - canvas._offset.top
+    };
+    if(freedrawline){
+      addLine(linepos.start.x,linepos.start.y,linepos.end.x,linepos.end.y);
+    }
+    resetLinePos();
+  });
+
+
+  document.getElementById('free-draw-line').onclick = toggleFreeDrawLine;
