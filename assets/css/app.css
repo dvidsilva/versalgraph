@@ -9,14 +9,14 @@ canvas {
 }
 
 .add-rect{
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   background: black;
 }
 
 .add-circle{
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   background: black;
 }
@@ -24,18 +24,18 @@ canvas {
 .add-triangle{
   width: 0;
 	height: 0;
-  border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-bottom: 40px solid black;
+  border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid black;
 }
 
 .add-line{
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-bottom: 4px solid black;
   -webkit-transform:   translateY(-20px) translateX(5px) rotate(27deg);
   /*position: absolute;*/
-  margin-top: -45.3px;
+  margin-bottom: -5.3px;
 }
 
 .add-text{
@@ -79,4 +79,11 @@ input {
 
 button{
   background: rgba(255, 255, 255, 0);
+}
+
+.color-btns{
+  margin: 0px 10px 10px 10px;
+  top: -5px;
+  display: inline;
+
 }

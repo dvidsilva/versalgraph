@@ -7,9 +7,9 @@
   <script src="bower_components/versal-component-runtime/dist/runtime.min.js"></script>
   <script src="assets/js/fabric.min.js"></script>
   <link rel="import" href="bower_components/versal-gadget-api/versal-gadget-api.html">
-  <link rel="stylesheet" href="assets/css/app.css">
   <link type="text/css" rel="stylesheet" href="assets/css/jquery.miniColors.css" />
   <link type="text/css" rel="stylesheet" href="assets/css/jquery.simplecolorpicker.css" />
+  <link rel="stylesheet" href="assets/css/app.css">
 
 
 </head>
@@ -25,13 +25,16 @@
     <button onclick="addCircle()"><div class='add-circle'></div></button>
     <button onclick="addTriangle()"><div class='add-triangle'></div></button>
     <button onclick="addLine()"><div class='add-line'></div></button>
-    <input type="text" class="text" placeholder='Add text'><button onclick="addText()" class='add-text'>+</button>
+
+    <input type="text" class="text" id='add-text-input' placeholder='Add text'><button onclick="addText()" class='add-text'>+</button>
 
   </div>
 
   <div class="edit-buttons">
-    <a class="btn" href="#" rel="tooltip" data-placement="top" data-original-title="Font Color"><input type="hidden" id="text-fontcolor" class="color-picker" size="7" value="#000000" style='line-height: 20px'></a>
-		<a class="btn" href="#" rel="tooltip" data-placement="top" data-original-title="Font Border Color"><input type="hidden" id="text-strokecolor" class="color-picker" size="7" value="#000000"></a>
+    <div class='color-btns'>
+      <a class="btn" href="#" rel="tooltip" data-placement="top" data-original-title="Font Color" title="Fill Color"><input type="hidden" id="text-fontcolor" class="color-picker" size="7" value="#000000" style='line-height: 20px'></a>
+		    <a class="btn" href="#" rel="tooltip" data-placement="top" data-original-title="Font Border Color" title="Stroke Color"><input type="hidden" id="text-strokecolor" class="color-picker" size="7" value="#000000"></a>
+    </div>
     <button class="btn" id="bring-to-front" title="Bring to Front"><img src='assets/img/bring-to-front.svg' class='bring-to-front-icon'/></button>
     <button class="btn" id="send-to-back" title="Send to Back"><img src='assets/img/send-to-back.svg' class='send-to-back-icon'/></button>
     <button id="remove-selected" class="btn" title="Delete selected item"><img src='assets/img/delete.svg' class='delete-icon'/></button>
@@ -51,7 +54,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.miniColors.min.js"></script>
 <script src='assets/js/app.js'></script>
-<script src='assets/js/moreapp.js'></script>
+<script src='assets/js/persistance.js'></script>
 
 
 </html>

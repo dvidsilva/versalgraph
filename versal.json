@@ -1,10 +1,10 @@
 {
   "launcher": "iframe",
-  "name": "graph",
-  "version": "0.0.1",
-  "title": "My gadget",
-  "description": "Does nothing just yet",
-  "author": "anonymous",
+  "name": "graphmaker",
+  "version": "0.1.0",
+  "title": "Graph Maker",
+  "description": "The best diagram making tool out there, the only limit is your imagination.",
+  "author": "Ste&Dvid",
   "defaultConfig": {},
   "defaultUserState": {}
 }
