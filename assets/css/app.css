@@ -34,7 +34,7 @@ canvas {
   height: 45px;
   border-bottom: 4px solid black;
   -webkit-transform:   translateY(-20px) translateX(5px) rotate(27deg);
-  position: absolute;
+  /*position: absolute;*/
   margin-top: -45.3px;
 }
 
@@ -52,7 +52,8 @@ canvas {
 }
 
 .btn img{
-   width: 40px;
+   width: 25px;
+   margin-left: -10px;
 }
 
 
